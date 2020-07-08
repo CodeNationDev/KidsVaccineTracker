@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o86-kc-vOO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New User View Controller-->
+        <scene sceneID="Xw7-zl-QQJ">
+            <objects>
+                <viewController id="o86-kc-vOO" customClass="NewUserViewController" customModule="KidsVaccineTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Co3-k5-CnA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Kid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDJ-1F-x3y">
+                                <rect key="frame" x="40" y="84" width="146.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-ei-DPd">
+                                <rect key="frame" x="40" y="188" width="174" height="62.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrF-NA-DwM">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yK-tN-oJV">
+                                        <rect key="frame" x="0.0" y="28.5" width="174" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3yK-tN-oJV" secondAttribute="bottom" id="2BS-JN-eS0"/>
+                                    <constraint firstAttribute="trailing" secondItem="3yK-tN-oJV" secondAttribute="trailing" id="Qu1-pB-07p"/>
+                                    <constraint firstItem="3yK-tN-oJV" firstAttribute="leading" secondItem="fYN-ei-DPd" secondAttribute="leading" id="T0w-lf-0k5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fYN-ei-DPd" firstAttribute="leading" secondItem="GS7-se-DJz" secondAttribute="leading" constant="40" id="3Ec-E5-QZP"/>
+                            <constraint firstItem="EDJ-1F-x3y" firstAttribute="leading" secondItem="GS7-se-DJz" secondAttribute="leading" constant="40" id="c35-ey-2He"/>
+                            <constraint firstItem="fYN-ei-DPd" firstAttribute="top" secondItem="EDJ-1F-x3y" secondAttribute="bottom" constant="56" id="eHl-FE-Tx1"/>
+                            <constraint firstItem="GS7-se-DJz" firstAttribute="trailing" secondItem="fYN-ei-DPd" secondAttribute="trailing" constant="200" id="ouB-le-aHo"/>
+                            <constraint firstItem="EDJ-1F-x3y" firstAttribute="top" secondItem="GS7-se-DJz" secondAttribute="top" constant="40" id="zdN-f2-RDz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GS7-se-DJz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1h-TQ-hmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="79.6875"/>
+        </scene>
+    </scenes>
+</document>

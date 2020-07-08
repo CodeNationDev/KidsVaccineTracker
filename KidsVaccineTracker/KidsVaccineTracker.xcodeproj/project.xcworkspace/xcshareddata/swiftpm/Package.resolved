@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Kanna",
+        "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
+        "state": {
+          "branch": null,
+          "revision": "609367a2cd84827a33383cf7923cb4fe8f69ee0a",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "SwiftMagicHelpers",
+        "repositoryURL": "https://github.com/CodeNationDev/SwiftMagicHelpers.git",
+        "state": {
+          "branch": null,
+          "revision": "edc3cfcbc8d88174d3c14545d4942718aa12cd62",
+          "version": null
+        }
+      },
+      {
+        "package": "VaccineDataReader",
+        "repositoryURL": "https://github.com/CodeNationDev/VaccineDataReader.git",
+        "state": {
+          "branch": null,
+          "revision": "415da29ee2a1b44be2f7ea0907dacd7e41188770",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

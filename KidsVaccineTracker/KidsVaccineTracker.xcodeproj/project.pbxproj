@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0744456B24B492B700693405 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0744456A24B492B700693405 /* Splash.storyboard */; };
 		0744456D24B492C400693405 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744456C24B492C400693405 /* SplashViewController.swift */; };
 		0744457124B4989600693405 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744457024B4989600693405 /* DataManager.swift */; };
-		0744457724B4C41600693405 /* KidsVaccineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */; };
+		07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82924B5D07E009DFACF /* VaccineDataReader */; };
+		07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */; };
+		07B6F83324B5D25D009DFACF /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83224B5D25D009DFACF /* Segue.swift */; };
+		07C3895624B5241C003E96A6 /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3895524B5241C003E96A6 /* Singletons.swift */; };
+		07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */; };
+		07C3896324B5A519003E96A6 /* NewUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3896224B5A519003E96A6 /* NewUser.storyboard */; };
+		07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3896424B5A538003E96A6 /* NewUserViewController.swift */; };
 		07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87524AF428F004240C3 /* AppDelegate.swift */; };
-		07E1A87824AF428F004240C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87724AF428F004240C3 /* SceneDelegate.swift */; };
 		07E1A87A24AF428F004240C3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87924AF428F004240C3 /* InitialViewController.swift */; };
 		07E1A87D24AF428F004240C3 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E1A87B24AF428F004240C3 /* Initial.storyboard */; };
 		07E1A88224AF4296004240C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E1A88124AF4296004240C3 /* Assets.xcassets */; };
@@ -24,9 +29,12 @@
 		0744456C24B492C400693405 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0744457024B4989600693405 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0744457624B4C41600693405 /* KidsVaccineTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsVaccineTracker.xcdatamodel; sourceTree = "<group>"; };
+		07B6F83224B5D25D009DFACF /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		07C3895524B5241C003E96A6 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
+		07C3896224B5A519003E96A6 /* NewUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewUser.storyboard; sourceTree = "<group>"; };
+		07C3896424B5A538003E96A6 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		07E1A87224AF428F004240C3 /* KidsVaccineTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsVaccineTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E1A87524AF428F004240C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E1A87724AF428F004240C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		07E1A87924AF428F004240C3 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		07E1A87C24AF428F004240C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 		07E1A88124AF4296004240C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */,
+				07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +58,7 @@
 		0744443224B47A0600693405 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07C3896124B5A45F003E96A6 /* NewUser */,
 				0744456924B4928700693405 /* Launch */,
 				0744456824B4927A00693405 /* Initial */,
 			);
@@ -58,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				07E1A87524AF428F004240C3 /* AppDelegate.swift */,
-				07E1A87724AF428F004240C3 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -95,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0744457024B4989600693405 /* DataManager.swift */,
+				07C3895524B5241C003E96A6 /* Singletons.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -104,6 +115,23 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		07B6F83124B5D24D009DFACF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07B6F83224B5D25D009DFACF /* Segue.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		07C3896124B5A45F003E96A6 /* NewUser */ = {
+			isa = PBXGroup;
+			children = (
+				07C3896224B5A519003E96A6 /* NewUser.storyboard */,
+				07C3896424B5A538003E96A6 /* NewUserViewController.swift */,
+			);
+			path = NewUser;
 			sourceTree = "<group>";
 		};
 		07E1A86924AF428F004240C3 = {
@@ -126,6 +154,7 @@
 		07E1A87424AF428F004240C3 /* KidsVaccineTracker */ = {
 			isa = PBXGroup;
 			children = (
+				07B6F83124B5D24D009DFACF /* Helpers */,
 				0744457224B499A400693405 /* Models */,
 				0744456E24B4987800693405 /* Managers */,
 				0744443224B47A0600693405 /* Scenes */,
@@ -152,6 +181,8 @@
 			);
 			name = KidsVaccineTracker;
 			packageProductDependencies = (
+				07B6F82924B5D07E009DFACF /* VaccineDataReader */,
+				07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */,
 			);
 			productName = KidsVaccineTracker;
 			productReference = 07E1A87224AF428F004240C3 /* KidsVaccineTracker.app */;
@@ -182,6 +213,8 @@
 			);
 			mainGroup = 07E1A86924AF428F004240C3;
 			packageReferences = (
+				07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */,
+				07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */,
 			);
 			productRefGroup = 07E1A87324AF428F004240C3 /* Products */;
 			projectDirPath = "";
@@ -198,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E1A88524AF4296004240C3 /* LaunchScreen.storyboard in Resources */,
+				07C3896324B5A519003E96A6 /* NewUser.storyboard in Resources */,
 				07E1A88224AF4296004240C3 /* Assets.xcassets in Resources */,
 				07E1A87D24AF428F004240C3 /* Initial.storyboard in Resources */,
 				0744456B24B492B700693405 /* Splash.storyboard in Resources */,
@@ -214,9 +248,11 @@
 				07E1A87A24AF428F004240C3 /* InitialViewController.swift in Sources */,
 				0744457124B4989600693405 /* DataManager.swift in Sources */,
 				07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */,
-				07E1A87824AF428F004240C3 /* SceneDelegate.swift in Sources */,
+				07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */,
+				07C3895624B5241C003E96A6 /* Singletons.swift in Sources */,
+				07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */,
+				07B6F83324B5D25D009DFACF /* Segue.swift in Sources */,
 				0744456D24B492C400693405 /* SplashViewController.swift in Sources */,
-				0744457724B4C41600693405 /* KidsVaccineTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeNationDev/VaccineDataReader.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeNationDev/SwiftMagicHelpers.git";
+			requirement = {
+				kind = revision;
+				revision = edc3cfcbc8d88174d3c14545d4942718aa12cd62;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07B6F82924B5D07E009DFACF /* VaccineDataReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */;
+			productName = VaccineDataReader;
+		};
+		07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */;
+			productName = SwiftMagicHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */ = {

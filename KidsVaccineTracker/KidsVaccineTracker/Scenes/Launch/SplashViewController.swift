@@ -6,12 +6,11 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DataManager.shared.loadnitialData()
+        
+        if let kids = DataManager.shared.loadnitialData() {
+            performSegue(withIdentifier: "initial", sender: nil)
+        } else {
+            performSegue(withIdentifier: "initial", sender: nil)
+        }
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        DataManager.shared.loadnitialData()
-    }
-    
 }

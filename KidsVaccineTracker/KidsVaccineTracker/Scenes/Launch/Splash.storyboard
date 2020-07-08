@@ -29,10 +29,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vt3-nj-Duq"/>
                     </view>
+                    <connections>
+                        <segue destination="xs1-8Q-cqQ" kind="custom" identifier="initial" customClass="ReplaceSegue" customModule="KidsVaccineTracker" customModuleProvider="target" id="5Ot-cJ-Ue1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2t7-s5-1RT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="27"/>
+        </scene>
+        <!--Initial-->
+        <scene sceneID="kus-Hs-HIg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Initial" storyboardName="Initial" id="xs1-8Q-cqQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MiK-X5-H3e"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trj-y3-jfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="-111"/>
         </scene>
     </scenes>
 </document>
