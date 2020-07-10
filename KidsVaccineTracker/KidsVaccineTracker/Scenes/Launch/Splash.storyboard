@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gNL-PT-fmy" firstAttribute="centerX" secondItem="fgo-ib-3q0" secondAttribute="centerX" id="NOW-Dt-s48"/>
                             <constraint firstItem="gNL-PT-fmy" firstAttribute="centerY" secondItem="fgo-ib-3q0" secondAttribute="centerY" id="x9c-UF-7a6"/>
@@ -31,6 +31,7 @@
                     </view>
                     <connections>
                         <segue destination="xs1-8Q-cqQ" kind="custom" identifier="initial" customClass="ReplaceSegue" customModule="KidsVaccineTracker" customModuleProvider="target" id="5Ot-cJ-Ue1"/>
+                        <segue destination="Cap-V3-Vzs" kind="custom" identifier="newuser" customClass="ReplaceSegue" customModule="KidsVaccineTracker" customModuleProvider="target" id="zNP-T7-9rP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2t7-s5-1RT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,6 +47,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trj-y3-jfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="909" y="-111"/>
+        </scene>
+        <!--NewUser-->
+        <scene sceneID="Z60-s7-ipo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewUser" id="Cap-V3-Vzs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGv-0R-Yzy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="159"/>
         </scene>
     </scenes>
 </document>

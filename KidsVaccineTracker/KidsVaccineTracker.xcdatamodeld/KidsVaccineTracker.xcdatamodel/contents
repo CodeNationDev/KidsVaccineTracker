@@ -14,26 +14,18 @@
         <attribute name="id_kid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="CD_Others_Vaccines" representedClassName="CD_Others_Vaccines" syncable="YES" codeGenerationType="class">
+    <entity name="CD_Scheduled_Vaccine" representedClassName="CD_Scheduled_Vaccine" syncable="YES" codeGenerationType="class">
         <attribute name="batch" optional="YES" attributeType="String"/>
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="commercial_name" optional="YES" attributeType="String"/>
+        <attribute name="date_administration" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="dose" optional="YES" attributeType="String"/>
         <attribute name="healthcare_center" optional="YES" attributeType="String"/>
         <attribute name="id_kid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="laboratory" optional="YES" attributeType="String"/>
         <attribute name="sign" optional="YES" attributeType="Binary"/>
-        <attribute name="vaccine" optional="YES" attributeType="String"/>
-    </entity>
-    <entity name="CD_Scheduled_Vaccine" representedClassName="CD_Scheduled_Vaccine" syncable="YES" codeGenerationType="class">
-        <attribute name="batch" optional="YES" attributeType="String"/>
-        <attribute name="commercial_name" optional="YES" attributeType="String"/>
-        <attribute name="date_administration" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="healthcare_center" optional="YES" attributeType="String"/>
-        <attribute name="id_kid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="laboratory" optional="YES" attributeType="String"/>
-        <attribute name="sign" optional="YES" attributeType="Binary"/>
         <attribute name="sticker" optional="YES" attributeType="Binary"/>
-        <attribute name="vaccine" optional="YES" attributeType="String"/>
+        <attribute name="v_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vaccineName" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CD_Special_Treatments" representedClassName="CD_Special_Treatments" syncable="YES" codeGenerationType="class">
         <attribute name="dose" optional="YES" attributeType="String"/>
@@ -58,8 +50,7 @@
         <element name="CD_Allergies" positionX="-318.2890625" positionY="-128.62890625" width="128" height="88"/>
         <element name="CD_Diseases_concern" positionX="-44.45703125" positionY="83.43359375" width="154.35546875" height="88"/>
         <element name="CD_Kid" positionX="-119.4375" positionY="-55.55078125" width="128" height="73"/>
-        <element name="CD_Others_Vaccines" positionX="67.0078125" positionY="-132.48828125" width="128" height="163"/>
-        <element name="CD_Scheduled_Vaccine" positionX="35.41015625" positionY="-399.73828125" width="128" height="178"/>
+        <element name="CD_Scheduled_Vaccine" positionX="35.41015625" positionY="-399.73828125" width="128" height="208"/>
         <element name="CD_Special_Treatments" positionX="-228.55859375" positionY="142.71875" width="152.06640625" height="118"/>
         <element name="CD_Vaccine" positionX="-146.32421875" positionY="-243.671875" width="128" height="103"/>
         <element name="CD_VitaminD" positionX="-287.93359375" positionY="9.6875" width="128" height="103"/>

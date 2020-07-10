@@ -13,6 +13,13 @@
 		07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82924B5D07E009DFACF /* VaccineDataReader */; };
 		07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */; };
 		07B6F83324B5D25D009DFACF /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83224B5D25D009DFACF /* Segue.swift */; };
+		07B6F83524B604F9009DFACF /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83424B604F9009DFACF /* Kid.swift */; };
+		07B6F83B24B7233D009DFACF /* VitaminD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83A24B7233D009DFACF /* VitaminD.swift */; };
+		07B6F83D24B7CFA4009DFACF /* SpecialTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83C24B7CFA4009DFACF /* SpecialTreatment.swift */; };
+		07B6F83F24B7D2C8009DFACF /* DiseasesConcern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83E24B7D2C8009DFACF /* DiseasesConcern.swift */; };
+		07B6F84124B7D425009DFACF /* Allergies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F84024B7D425009DFACF /* Allergies.swift */; };
+		07B6F84324B7D4F9009DFACF /* ScheduledVaccine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F84224B7D4F9009DFACF /* ScheduledVaccine.swift */; };
+		07B6F84524B84A5A009DFACF /* OtherVaccines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F84424B84A5A009DFACF /* OtherVaccines.swift */; };
 		07C3895624B5241C003E96A6 /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3895524B5241C003E96A6 /* Singletons.swift */; };
 		07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */; };
 		07C3896324B5A519003E96A6 /* NewUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3896224B5A519003E96A6 /* NewUser.storyboard */; };
@@ -30,6 +37,13 @@
 		0744457024B4989600693405 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0744457624B4C41600693405 /* KidsVaccineTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsVaccineTracker.xcdatamodel; sourceTree = "<group>"; };
 		07B6F83224B5D25D009DFACF /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		07B6F83424B604F9009DFACF /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
+		07B6F83A24B7233D009DFACF /* VitaminD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminD.swift; sourceTree = "<group>"; };
+		07B6F83C24B7CFA4009DFACF /* SpecialTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialTreatment.swift; sourceTree = "<group>"; };
+		07B6F83E24B7D2C8009DFACF /* DiseasesConcern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesConcern.swift; sourceTree = "<group>"; };
+		07B6F84024B7D425009DFACF /* Allergies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergies.swift; sourceTree = "<group>"; };
+		07B6F84224B7D4F9009DFACF /* ScheduledVaccine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledVaccine.swift; sourceTree = "<group>"; };
+		07B6F84424B84A5A009DFACF /* OtherVaccines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OtherVaccines.swift; path = KidsVaccineTracker/Models/OtherVaccines.swift; sourceTree = "<group>"; };
 		07C3895524B5241C003E96A6 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
 		07C3896224B5A519003E96A6 /* NewUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewUser.storyboard; sourceTree = "<group>"; };
 		07C3896424B5A538003E96A6 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +127,12 @@
 		0744457224B499A400693405 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				07B6F83424B604F9009DFACF /* Kid.swift */,
+				07B6F83A24B7233D009DFACF /* VitaminD.swift */,
+				07B6F83C24B7CFA4009DFACF /* SpecialTreatment.swift */,
+				07B6F83E24B7D2C8009DFACF /* DiseasesConcern.swift */,
+				07B6F84024B7D425009DFACF /* Allergies.swift */,
+				07B6F84224B7D4F9009DFACF /* ScheduledVaccine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +157,7 @@
 		07E1A86924AF428F004240C3 = {
 			isa = PBXGroup;
 			children = (
+				07B6F84424B84A5A009DFACF /* OtherVaccines.swift */,
 				07E1A87424AF428F004240C3 /* KidsVaccineTracker */,
 				0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */,
 				07E1A87324AF428F004240C3 /* Products */,
@@ -246,13 +267,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E1A87A24AF428F004240C3 /* InitialViewController.swift in Sources */,
+				07B6F83F24B7D2C8009DFACF /* DiseasesConcern.swift in Sources */,
+				07B6F84524B84A5A009DFACF /* OtherVaccines.swift in Sources */,
 				0744457124B4989600693405 /* DataManager.swift in Sources */,
+				07B6F83524B604F9009DFACF /* Kid.swift in Sources */,
 				07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */,
 				07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */,
+				07B6F84124B7D425009DFACF /* Allergies.swift in Sources */,
 				07C3895624B5241C003E96A6 /* Singletons.swift in Sources */,
 				07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */,
+				07B6F83B24B7233D009DFACF /* VitaminD.swift in Sources */,
+				07B6F83D24B7CFA4009DFACF /* SpecialTreatment.swift in Sources */,
 				07B6F83324B5D25D009DFACF /* Segue.swift in Sources */,
 				0744456D24B492C400693405 /* SplashViewController.swift in Sources */,
+				07B6F84324B7D4F9009DFACF /* ScheduledVaccine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
