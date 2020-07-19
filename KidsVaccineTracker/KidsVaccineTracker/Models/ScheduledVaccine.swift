@@ -30,5 +30,11 @@ struct ScheduledVaccine {
         }
     }
     
-    func trigger() {}
+    func trigger(id_kid: UUID) -> Bool {
+        /*TODO: Check if:
+         - Kid exists.
+         - Vaccine don't exists.
+        */
+        return true
+    }
 }

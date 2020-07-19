@@ -13,6 +13,7 @@
     <entity name="CD_Kid" representedClassName="CD_Kid" syncable="YES" codeGenerationType="class">
         <attribute name="id_kid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
     </entity>
     <entity name="CD_Scheduled_Vaccine" representedClassName="CD_Scheduled_Vaccine" syncable="YES" codeGenerationType="class">
         <attribute name="batch" optional="YES" attributeType="String"/>
@@ -49,7 +50,7 @@
     <elements>
         <element name="CD_Allergies" positionX="-318.2890625" positionY="-128.62890625" width="128" height="88"/>
         <element name="CD_Diseases_concern" positionX="-44.45703125" positionY="83.43359375" width="154.35546875" height="88"/>
-        <element name="CD_Kid" positionX="-119.4375" positionY="-55.55078125" width="128" height="73"/>
+        <element name="CD_Kid" positionX="-119.4375" positionY="-55.55078125" width="128" height="88"/>
         <element name="CD_Scheduled_Vaccine" positionX="35.41015625" positionY="-399.73828125" width="128" height="208"/>
         <element name="CD_Special_Treatments" positionX="-228.55859375" positionY="142.71875" width="152.06640625" height="118"/>
         <element name="CD_Vaccine" positionX="-146.32421875" positionY="-243.671875" width="128" height="103"/>

@@ -3,6 +3,7 @@ import Foundation
 import CoreData
 import UIKit
 import VaccineDataReader
+import os.log
 
 class DataManager: NSObject {
     public static let shared = DataManager()
@@ -22,16 +23,6 @@ class DataManager: NSObject {
             return kids as? [CD_Kid]
         }
         return nil
-    }
-    
-    public func save(object: Kid) {
-        if let context = SingletonData.context, let entity = NSEntityDescription.entity(forEntityName: CD_Kid.description(), in: context) {
-            let kid = NSManagedObject(entity: entity, insertInto: context)
-            
-            kid.setValue(object.name, forKey: "name")
-            kid.setValue(object.id_kid, forKey: "id_kid")
-            saveContext()
-        }
     }
     
     public func saveContext() {

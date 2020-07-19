@@ -22,7 +22,12 @@ struct SpecialTreatment {
         }
     }
     
-    func trigger() {}
+    func trigger(id_kid: UUID) -> Bool {
+        /*TODO: Check if:
+         - Kid exists.
+        */
+        return true
+    }
     
     
 }

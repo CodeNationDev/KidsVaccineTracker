@@ -20,7 +20,11 @@ struct VitaminD {
           }
       }
     
-    func trigger() -> Bool {
+    func trigger(id_kid: UUID) -> Bool {
+        /*TODO: Check if:
+         - Kid exists.
+         - Another treatment is in progress.
+        */
         return true
     }
 }

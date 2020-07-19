@@ -18,5 +18,7 @@ struct Allergies {
         }
     }
     
-    func trigger() {}
+    func trigger(id_kid: UUID) -> Bool {
+        return true
+    }
 }

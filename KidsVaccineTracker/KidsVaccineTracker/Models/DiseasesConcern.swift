@@ -17,8 +17,13 @@ struct DiseasesConcern {
             DataManager.shared.saveContext()
         }
     }
-    
-    func trigger() {}
-    
     func fetch() {}
+    
+    
+    func trigger(id_kid: UUID) -> Bool {
+        /*TODO: Check if:
+         - Kid exists.
+        */
+        return true
+    }
 }
