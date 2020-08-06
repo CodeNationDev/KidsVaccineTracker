@@ -13,12 +13,12 @@ struct Kid {
             let kid = NSManagedObject(entity: entity, insertInto: context)
             kid.setValue(name, forKey: "name")
             kid.setValue(id_kid, forKey: "id_kid")
-            kid.setValue(photo, forKey: "photo")
+            kid.setValue(photo?.pngData(), forKey: "photo")
             DataManager.shared.saveContext()
         }
     }
     
-    public static func update(name: String, id_kid: UUID) {
+    public static func update(name: String?, id_kid: UUID, photo: UIImage?) {
         
     }
     

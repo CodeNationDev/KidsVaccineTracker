@@ -50,17 +50,17 @@
                                     <action selector="tap_save:" destination="o86-kc-vOO" eventType="touchUpInside" id="uQU-b8-qrk"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="pZr-fW-qiQ">
-                                <rect key="frame" x="121" y="373" width="172" height="150"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="pZr-fW-qiQ">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="HbS-EG-F4x"/>
+                                    <constraint firstAttribute="width" constant="200" id="MF3-Xu-Meu"/>
+                                    <constraint firstAttribute="height" constant="200" id="sb5-N9-mpV"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pZr-fW-qiQ" firstAttribute="leading" secondItem="GS7-se-DJz" secondAttribute="leading" constant="121" id="9c4-dA-7yh"/>
                             <constraint firstItem="GS7-se-DJz" firstAttribute="bottom" secondItem="wb9-VN-nhD" secondAttribute="bottom" constant="60" id="Dy6-wg-Utf"/>
                             <constraint firstItem="wb9-VN-nhD" firstAttribute="centerX" secondItem="Co3-k5-CnA" secondAttribute="centerX" id="Odx-es-ID5"/>
                             <constraint firstItem="EDJ-1F-x3y" firstAttribute="leading" secondItem="GS7-se-DJz" secondAttribute="leading" constant="40" id="c35-ey-2He"/>
@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="imageAvatar" destination="pZr-fW-qiQ" id="ZO7-mi-C3r"/>
+                        <outlet property="saveButton" destination="wb9-VN-nhD" id="PST-0U-Bvx"/>
                         <outlet property="txName" destination="3yK-tN-oJV" id="e8a-t3-Fja"/>
                     </connections>
                 </viewController>
@@ -83,6 +84,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="boyPlaceholder" width="272" height="281"/>
+        <image name="camera" width="512" height="512"/>
     </resources>
 </document>

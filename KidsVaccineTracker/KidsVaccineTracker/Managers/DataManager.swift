@@ -14,7 +14,7 @@ class DataManager: NSObject {
     override init() {
         self.appDelegate = UIApplication.shared.delegate as? AppDelegate
         SingletonData.context = self.appDelegate!.persistentContainer.viewContext
-        SingletonData.scheduledVaccines = loadScheduledVaccines()
+//        SingletonData.scheduledVaccines = loadScheduledVaccines()
     }
     
     public func loadnitialData() -> [CD_Kid]? {
