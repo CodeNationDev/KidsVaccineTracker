@@ -39,6 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="kidLabel" destination="rvx-4b-94W" id="gPs-vn-Nir"/>
                         <outlet property="kid_photo" destination="Qx8-sm-Wqw" id="MRM-XK-dta"/>
                     </connections>
                 </viewController>
