@@ -26,6 +26,7 @@
 		07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */; };
 		07C3896324B5A519003E96A6 /* NewUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3896224B5A519003E96A6 /* NewUser.storyboard */; };
 		07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3896424B5A538003E96A6 /* NewUserViewController.swift */; };
+		07E0C20124F16E130048939B /* SimplyLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 07E0C20024F16E130048939B /* SimplyLogger */; };
 		07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87524AF428F004240C3 /* AppDelegate.swift */; };
 		07E1A87A24AF428F004240C3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87924AF428F004240C3 /* InitialViewController.swift */; };
 		07E1A87D24AF428F004240C3 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E1A87B24AF428F004240C3 /* Initial.storyboard */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */,
+				07E0C20124F16E130048939B /* SimplyLogger in Frameworks */,
 				07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +236,7 @@
 			packageProductDependencies = (
 				07B6F82924B5D07E009DFACF /* VaccineDataReader */,
 				07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */,
+				07E0C20024F16E130048939B /* SimplyLogger */,
 			);
 			productName = KidsVaccineTracker;
 			productReference = 07E1A87224AF428F004240C3 /* KidsVaccineTracker.app */;
@@ -266,6 +269,7 @@
 			packageReferences = (
 				07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */,
 				07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */,
+				07E0C1FF24F16E120048939B /* XCRemoteSwiftPackageReference "SimplyLogger" */,
 			);
 			productRefGroup = 07E1A87324AF428F004240C3 /* Products */;
 			projectDirPath = "";
@@ -530,6 +534,14 @@
 				revision = edc3cfcbc8d88174d3c14545d4942718aa12cd62;
 			};
 		};
+		07E0C1FF24F16E120048939B /* XCRemoteSwiftPackageReference "SimplyLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeNationDev/SimplyLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -542,6 +554,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */;
 			productName = SwiftMagicHelpers;
+		};
+		07E0C20024F16E130048939B /* SimplyLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07E0C1FF24F16E120048939B /* XCRemoteSwiftPackageReference "SimplyLogger" */;
+			productName = SimplyLogger;
 		};
 /* End XCSwiftPackageProductDependency section */
 

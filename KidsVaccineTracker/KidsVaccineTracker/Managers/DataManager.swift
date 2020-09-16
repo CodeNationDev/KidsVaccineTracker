@@ -34,13 +34,10 @@ class DataManager: NSObject {
             }
         }
     }
-    
-    public func load() {
-        
-    }
-    
-    public func update() {
-        
+
+    func trigger(id_kid: UUID) -> Bool {
+        guard let _ = DataManager.fetch(id_kid: id_kid, entityName: CD_Kid.description(), withType: CD_Kid.self) else { return false }
+        return true
     }
     
     public func fetchRecordsForEntity(_ entity: String, inManagedObjectContext managedObjectContext: NSManagedObjectContext, predicate: NSPredicate? = nil) -> [NSManagedObject] {
@@ -49,7 +46,6 @@ class DataManager: NSObject {
         if let predicate = predicate {
             fetchRequest.predicate = predicate
         }
-        
         // Helpers
         var result = [NSManagedObject]()
         
@@ -66,5 +62,15 @@ class DataManager: NSObject {
         }
         
         return result
+    }
+    
+    public static func fetch<T: NSManagedObject>(id_kid: UUID, entityName: String, withType type: T.Type) -> [NSManagedObject]? {
+        if let context = SingletonData.context {
+            let predicate = NSPredicate(format: "id_kid == %@", id_kid.uuidString)
+            if let specialTreat = DataManager.shared.fetchRecordsForEntity(CD_VitaminD.description(), inManagedObjectContext: context, predicate: predicate) as? [T] {
+                return specialTreat
+            }
+        }
+        return nil
     }
 }

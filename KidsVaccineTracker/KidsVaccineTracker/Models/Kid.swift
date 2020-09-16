@@ -5,7 +5,7 @@ import UIKit
 
 struct Kid {
     var name: String
-    var photo: UIImage?
+    var photo: UIImage? = UIImage()
     var id_kid: UUID = UUID()
     
     public func save() {
@@ -18,12 +18,48 @@ struct Kid {
         }
     }
     
-    public static func update(name: String?, id_kid: UUID, photo: UIImage?) {
-        
+    public static func update(newName: String? = nil, id_kid: UUID, newPhoto: UIImage? = nil) {
+        let predicate = NSPredicate(format: "id_kid == %@", id_kid.uuidString)
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: CD_Kid.description())
+        fetchRequest.predicate = predicate
+        do {
+            let results = try SingletonData.context?.fetch(fetchRequest)
+            
+            let objectToUpdate = results?.first as! CD_Kid
+            objectToUpdate.name = newName ?? objectToUpdate.name!
+            objectToUpdate.photo = newPhoto?.pngData() ?? UIImage(data: objectToUpdate.photo!)?.pngData()
+            try SingletonData.context?.save()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
+    
     public static func remove(id_kid: UUID) {
-        //TODO: Delete on cascade
+        let predicate = NSPredicate(format: "id_kid == %@", id_kid.uuidString)
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: CD_Kid.description())
+        fetchRequest.predicate = predicate
+        do {
+            let results = try SingletonData.context?.fetch(fetchRequest)
+            
+            let objectToUpdate = results?.first as! NSManagedObject
+            SingletonData.context?.delete(objectToUpdate)
+            try SingletonData.context?.save()
+            
+            //TODO: Delete all data related with this Kid.
+            /*
+             VitaminD.remove
+             SpecialTreatment.remove
+             DiseasesConcern.remove
+             Allergies.remove
+             ScheduledVaccine.remove
+             OtherVaccines.remove
+            */
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     public static func fetch() -> [Kid] {

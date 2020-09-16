@@ -10,7 +10,7 @@ struct SpecialTreatment {
     var id_kid: String
     
     func save(kid: UUID) {
-        if let context = SingletonData.context, let entity = NSEntityDescription.entity(forEntityName: CD_Special_Treatments.description(), in: context) {
+        if let context = SingletonData.context, let entity = NSEntityDescription.entity(forEntityName: CD_Special_Treatments.description(), in: context), DataManager.shared.trigger(id_kid: kid) {
             let special = NSManagedObject(entity: entity, insertInto: context)
             
             special.setValue(dose, forKey: "dose")
@@ -21,13 +21,7 @@ struct SpecialTreatment {
             DataManager.shared.saveContext()
         }
     }
-    
-    func trigger(id_kid: UUID) -> Bool {
-        /*TODO: Check if:
-         - Kid exists.
-        */
-        return true
+    public static func fetch(id_kid: UUID) -> [CD_Special_Treatments]? {
+        (DataManager.fetch(id_kid: id_kid, entityName: CD_Special_Treatments.description(), withType: CD_Special_Treatments.self) as! [CD_Special_Treatments])
     }
-    
-    
 }

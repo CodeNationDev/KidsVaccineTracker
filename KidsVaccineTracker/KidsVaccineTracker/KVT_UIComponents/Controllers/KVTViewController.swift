@@ -1,6 +1,7 @@
 //
 import Foundation
 import UIKit
+import SimplyLogger
 
 public class KVTViewController: UIViewController, UITextFieldDelegate {
     
@@ -8,6 +9,7 @@ public class KVTViewController: UIViewController, UITextFieldDelegate {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        SimplyLogger.log(str: "\(self.restorationIdentifier ?? self.debugDescription) loaded", category: .viewcycle)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 

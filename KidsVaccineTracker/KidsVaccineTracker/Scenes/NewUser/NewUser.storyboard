@@ -10,7 +10,7 @@
         <!--New User View Controller-->
         <scene sceneID="Xw7-zl-QQJ">
             <objects>
-                <viewController id="o86-kc-vOO" customClass="NewUserViewController" customModule="KidsVaccineTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NewKidVC" id="o86-kc-vOO" customClass="NewUserViewController" customModule="KidsVaccineTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Co3-k5-CnA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

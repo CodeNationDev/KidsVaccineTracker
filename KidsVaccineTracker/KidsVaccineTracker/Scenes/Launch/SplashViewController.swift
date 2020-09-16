@@ -2,7 +2,7 @@
 import Foundation
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: KVTViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,8 @@ class SplashViewController: UIViewController {
         }
     }
     
+    
+    /// Prepare segue override for pass parameters to next ViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier, identifier.elementsEqual("initial") {
             if let mainVC = segue.destination as? InitialViewController {

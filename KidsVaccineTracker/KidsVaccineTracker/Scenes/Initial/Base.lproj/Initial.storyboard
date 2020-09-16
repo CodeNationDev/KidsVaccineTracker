@@ -10,7 +10,7 @@
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="KidsVaccineTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="InitialVC" id="BYZ-38-t0r" customClass="InitialViewController" customModule="KidsVaccineTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,13 +28,22 @@
                                     <constraint firstAttribute="height" constant="200" id="Xhq-fs-3lE"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVF-ap-Fi2">
+                                <rect key="frame" x="184" y="832" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tap_update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnQ-Vb-6H8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rvx-4b-94W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="0dq-iu-RGv"/>
                             <constraint firstItem="rvx-4b-94W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="1Xf-2Q-Nlb"/>
                             <constraint firstItem="Qx8-sm-Wqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZb-zX-8AS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dVF-ap-Fi2" secondAttribute="bottom" id="XNH-1G-JLC"/>
                             <constraint firstItem="Qx8-sm-Wqw" firstAttribute="top" secondItem="rvx-4b-94W" secondAttribute="bottom" constant="39" id="enh-dl-gqG"/>
+                            <constraint firstItem="dVF-ap-Fi2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zp0-RL-8n1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
