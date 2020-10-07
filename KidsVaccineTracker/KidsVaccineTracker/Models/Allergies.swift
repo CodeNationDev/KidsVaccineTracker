@@ -1,6 +1,7 @@
 //
 import Foundation
 import CoreData
+import SimplyLogger
 
 struct Allergies {
     var name: String
@@ -14,7 +15,11 @@ struct Allergies {
             allergies.setValue(desc, forKey: "desc")
             allergies.setValue(name, forKey: "name")
             allergies.setValue(kid, forKey: "id_kid")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "Allergy saved", category: .data)
+                }
+            })
         }
     }
     

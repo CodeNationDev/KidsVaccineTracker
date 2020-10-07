@@ -1,6 +1,7 @@
 //
 import Foundation
 import CoreData
+import SimplyLogger
 
 struct SpecialTreatment {
     var dose: String
@@ -18,7 +19,11 @@ struct SpecialTreatment {
             special.setValue(duration, forKey: "duration")
             special.setValue(name, forKey: "name")
             special.setValue(kid, forKey: "id_kid")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "Special Treatment saved", category: .data)
+                }
+            })
         }
     }
     public static func fetch(id_kid: UUID) -> [CD_Special_Treatments]? {

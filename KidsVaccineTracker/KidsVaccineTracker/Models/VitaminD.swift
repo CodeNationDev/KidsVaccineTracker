@@ -1,6 +1,7 @@
 //
 import Foundation
 import CoreData
+import SimplyLogger
 
 struct VitaminD {
     var dose: String
@@ -15,7 +16,11 @@ struct VitaminD {
             vitaminD.setValue(type, forKey: "type")
             vitaminD.setValue(duration, forKey: "duration")
             vitaminD.setValue(kid, forKey: "id_kid")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "VitaminD saved", category: .data)
+                }
+            })
           }
       }
     

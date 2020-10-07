@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07066F5C252E1223006C97A3 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07066F5B252E1223006C97A3 /* Welcome.storyboard */; };
 		0744456B24B492B700693405 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0744456A24B492B700693405 /* Splash.storyboard */; };
 		0744456D24B492C400693405 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744456C24B492C400693405 /* SplashViewController.swift */; };
 		0744457124B4989600693405 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744457024B4989600693405 /* DataManager.swift */; };
-		077E10A924DB02E9004B38FC /* KVTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E10A824DB02E9004B38FC /* KVTViewController.swift */; };
-		0795395924DC553D00705891 /* KVTColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0795395824DC553D00705891 /* KVTColors.swift */; };
 		07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82924B5D07E009DFACF /* VaccineDataReader */; };
-		07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */; };
 		07B6F83324B5D25D009DFACF /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83224B5D25D009DFACF /* Segue.swift */; };
 		07B6F83524B604F9009DFACF /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83424B604F9009DFACF /* Kid.swift */; };
 		07B6F83B24B7233D009DFACF /* VitaminD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B6F83A24B7233D009DFACF /* VitaminD.swift */; };
@@ -26,6 +24,7 @@
 		07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */; };
 		07C3896324B5A519003E96A6 /* NewUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C3896224B5A519003E96A6 /* NewUser.storyboard */; };
 		07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3896424B5A538003E96A6 /* NewUserViewController.swift */; };
+		07CB82D42512627900E5EC65 /* KVTUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 07CB82D32512627900E5EC65 /* KVTUIKit */; };
 		07E0C20124F16E130048939B /* SimplyLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 07E0C20024F16E130048939B /* SimplyLogger */; };
 		07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87524AF428F004240C3 /* AppDelegate.swift */; };
 		07E1A87A24AF428F004240C3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1A87924AF428F004240C3 /* InitialViewController.swift */; };
@@ -35,12 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07066F5B252E1223006C97A3 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		0744456A24B492B700693405 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		0744456C24B492C400693405 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0744457024B4989600693405 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0744457624B4C41600693405 /* KidsVaccineTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsVaccineTracker.xcdatamodel; sourceTree = "<group>"; };
-		077E10A824DB02E9004B38FC /* KVTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVTViewController.swift; sourceTree = "<group>"; };
-		0795395824DC553D00705891 /* KVTColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVTColors.swift; sourceTree = "<group>"; };
+		079A211F25122E27008EE89B /* KVTUIKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KVTUIKit; path = ../../KVTUIKit; sourceTree = "<group>"; };
 		07B6F83224B5D25D009DFACF /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		07B6F83424B604F9009DFACF /* Kid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kid.swift; sourceTree = "<group>"; };
 		07B6F83A24B7233D009DFACF /* VitaminD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminD.swift; sourceTree = "<group>"; };
@@ -66,18 +65,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07B6F83024B5D18B009DFACF /* SwiftMagicHelpers in Frameworks */,
 				07E0C20124F16E130048939B /* SimplyLogger in Frameworks */,
 				07B6F82A24B5D07E009DFACF /* VaccineDataReader in Frameworks */,
+				07CB82D42512627900E5EC65 /* KVTUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07066F5A252E1208006C97A3 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				07066F5B252E1223006C97A3 /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		0744443224B47A0600693405 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07066F5A252E1208006C97A3 /* Welcome */,
 				07C3896124B5A45F003E96A6 /* NewUser */,
 				0744456924B4928700693405 /* Launch */,
 				0744456824B4927A00693405 /* Initial */,
@@ -144,31 +152,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		077E10AA24DC4E6B004B38FC /* KVT_UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				07953A8D24DC59A400705891 /* Utils */,
-				077E10AB24DC4EDC004B38FC /* Controllers */,
-			);
-			path = KVT_UIComponents;
-			sourceTree = "<group>";
-		};
-		077E10AB24DC4EDC004B38FC /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				077E10A824DB02E9004B38FC /* KVTViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		07953A8D24DC59A400705891 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				0795395824DC553D00705891 /* KVTColors.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		07B6F83124B5D24D009DFACF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,12 +169,21 @@
 			path = NewUser;
 			sourceTree = "<group>";
 		};
+		07CB82D22512627900E5EC65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		07E1A86924AF428F004240C3 = {
 			isa = PBXGroup;
 			children = (
+				079A211F25122E27008EE89B /* KVTUIKit */,
 				07E1A87424AF428F004240C3 /* KidsVaccineTracker */,
 				0744457524B4C41600693405 /* KidsVaccineTracker.xcdatamodeld */,
 				07E1A87324AF428F004240C3 /* Products */,
+				07CB82D22512627900E5EC65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,7 +198,6 @@
 		07E1A87424AF428F004240C3 /* KidsVaccineTracker */ = {
 			isa = PBXGroup;
 			children = (
-				077E10AA24DC4E6B004B38FC /* KVT_UIComponents */,
 				07B6F83124B5D24D009DFACF /* Helpers */,
 				0744457224B499A400693405 /* Models */,
 				0744456E24B4987800693405 /* Managers */,
@@ -235,8 +226,8 @@
 			name = KidsVaccineTracker;
 			packageProductDependencies = (
 				07B6F82924B5D07E009DFACF /* VaccineDataReader */,
-				07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */,
 				07E0C20024F16E130048939B /* SimplyLogger */,
+				07CB82D32512627900E5EC65 /* KVTUIKit */,
 			);
 			productName = KidsVaccineTracker;
 			productReference = 07E1A87224AF428F004240C3 /* KidsVaccineTracker.app */;
@@ -268,7 +259,6 @@
 			mainGroup = 07E1A86924AF428F004240C3;
 			packageReferences = (
 				07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */,
-				07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */,
 				07E0C1FF24F16E120048939B /* XCRemoteSwiftPackageReference "SimplyLogger" */,
 			);
 			productRefGroup = 07E1A87324AF428F004240C3 /* Products */;
@@ -290,6 +280,7 @@
 				07E1A88224AF4296004240C3 /* Assets.xcassets in Resources */,
 				07E1A87D24AF428F004240C3 /* Initial.storyboard in Resources */,
 				0744456B24B492B700693405 /* Splash.storyboard in Resources */,
+				07066F5C252E1223006C97A3 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +297,12 @@
 				0744457124B4989600693405 /* DataManager.swift in Sources */,
 				07B6F83524B604F9009DFACF /* Kid.swift in Sources */,
 				07E1A87624AF428F004240C3 /* AppDelegate.swift in Sources */,
-				077E10A924DB02E9004B38FC /* KVTViewController.swift in Sources */,
 				07C3896024B52E1C003E96A6 /* KidsVaccineTracker.xcdatamodeld in Sources */,
 				07B6F84124B7D425009DFACF /* Allergies.swift in Sources */,
 				07C3895624B5241C003E96A6 /* Singletons.swift in Sources */,
 				07C3896524B5A538003E96A6 /* NewUserViewController.swift in Sources */,
 				07B6F83B24B7233D009DFACF /* VitaminD.swift in Sources */,
 				07B6F83D24B7CFA4009DFACF /* SpecialTreatment.swift in Sources */,
-				0795395924DC553D00705891 /* KVTColors.swift in Sources */,
 				07B6F83324B5D25D009DFACF /* Segue.swift in Sources */,
 				0744456D24B492C400693405 /* SplashViewController.swift in Sources */,
 				07B6F84324B7D4F9009DFACF /* ScheduledVaccine.swift in Sources */,
@@ -526,14 +515,6 @@
 				minimumVersion = 0.2.0;
 			};
 		};
-		07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CodeNationDev/SwiftMagicHelpers.git";
-			requirement = {
-				kind = revision;
-				revision = edc3cfcbc8d88174d3c14545d4942718aa12cd62;
-			};
-		};
 		07E0C1FF24F16E120048939B /* XCRemoteSwiftPackageReference "SimplyLogger" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CodeNationDev/SimplyLogger.git";
@@ -550,10 +531,9 @@
 			package = 07B6F82824B5D07E009DFACF /* XCRemoteSwiftPackageReference "VaccineDataReader" */;
 			productName = VaccineDataReader;
 		};
-		07B6F82F24B5D18B009DFACF /* SwiftMagicHelpers */ = {
+		07CB82D32512627900E5EC65 /* KVTUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 07B6F82E24B5D18B009DFACF /* XCRemoteSwiftPackageReference "SwiftMagicHelpers" */;
-			productName = SwiftMagicHelpers;
+			productName = KVTUIKit;
 		};
 		07E0C20024F16E130048939B /* SimplyLogger */ = {
 			isa = XCSwiftPackageProductDependency;

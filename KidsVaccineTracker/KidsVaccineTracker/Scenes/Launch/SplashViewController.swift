@@ -1,8 +1,9 @@
 //
 import Foundation
 import UIKit
+import KVTUIKit
 
-class SplashViewController: KVTViewController {
+class SplashViewController: KVTBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +30,4 @@ class SplashViewController: KVTViewController {
             }
         }
     }
-    
 }

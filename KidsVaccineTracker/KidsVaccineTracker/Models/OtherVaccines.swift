@@ -1,6 +1,7 @@
 //
 import Foundation
 import CoreData
+import SimplyLogger
 
 struct OtherVaccines {
     enum vaccineType: Int {
@@ -32,7 +33,11 @@ struct OtherVaccines {
             others.setValue(vaccineName, forKey: "vaccineName")
             others.setValue(dose, forKey: "dose")
             others.setValue(v_type, forKey: "v_type")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "Other Vaccine saved", category: .data)
+                }
+            })
         }
     }
     

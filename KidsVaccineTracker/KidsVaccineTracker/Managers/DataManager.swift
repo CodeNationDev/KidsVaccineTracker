@@ -25,10 +25,11 @@ class DataManager: NSObject {
         return nil
     }
     
-    public func saveContext() {
+    public func saveContext(completion: (_ success:Bool) -> Void) {
         if let context = SingletonData.context {
             do {
                 try context.save()
+                completion(true)
             } catch {
                 print("Fail saving data...")
             }

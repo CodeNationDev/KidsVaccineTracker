@@ -2,6 +2,7 @@
 import Foundation
 import CoreData
 import UIKit
+import SimplyLogger
 
 struct Kid {
     var name: String
@@ -14,7 +15,11 @@ struct Kid {
             kid.setValue(name, forKey: "name")
             kid.setValue(id_kid, forKey: "id_kid")
             kid.setValue(photo?.pngData(), forKey: "photo")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "Kid saved", category: .data)
+                }
+            })
         }
     }
     

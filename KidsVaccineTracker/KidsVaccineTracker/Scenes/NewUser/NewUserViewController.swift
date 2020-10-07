@@ -1,36 +1,54 @@
 //
 import Foundation
 import UIKit
+import KVTUIKit
 
-class NewUserViewController: KVTViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+
+class NewUserViewController: KVTBaseViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    @IBOutlet weak var txName: UITextField!
+    
+    
+    @IBOutlet weak var bodyCard: KVTCard!
+    @IBOutlet weak var txName: KVTMasterTextField!
     @IBOutlet weak var imageAvatar: UIImageView!
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var headerImage: UIImageView!
+    
     var kidPhoto:UIImage?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        headerImage.image = .kidsHeaderImage
+        bodyCard.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setup()
+        
+
     }
     @IBAction func tap_save(_ sender: Any) {
-        if let name = txName.text, name.count > 0 {
-            Kid(name: name, photo: kidPhoto).save()
-            
-        } else {
-            let alertController = UIAlertController(title: "Error", message: "Insert a valid name", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alertController, animated: true)
-        }
-    }
-    
-    func setup() {
-        imageAvatar.image = imageAvatar.image?.withRenderingMode(.alwaysTemplate)
-        imageAvatar.layer.cornerRadius = imageAvatar.bounds.size.height / 2
-        imageAvatar.tintColor = UIColor.blackNwhite
-        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        imageAvatar.addGestureRecognizer(tapgesture)
+       UIView.animate(withDuration: 0.05,
+            animations: {
+                self.saveButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            },
+            completion: { _ in
+                UIView.animate(withDuration: 0.05) {
+                    self.saveButton.transform = CGAffineTransform.identity
+                    if let name = self.txName.textField?.text, name.count > 0 {
+                        Kid(name: name, photo: self.kidPhoto).save()
+                    } else {
+                        let action1 = KVTAlertAction(title: "OK", style: .normal, action: {
+                            self.dismiss(animated: true, completion: nil)
+                        })
+                        
+                        let alertController = KVTAlert(title: "Aviso", message: "Es necesario insertar un nombre, por favor, vuelve a intentarlo.Es necesario insertar un nombre, por favor, vuelve a intentarlo.", actions: (action1, nil))
+                        
+                        self.present(alertController, animated: true)
+                    }
+                }
+            })
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)

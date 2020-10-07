@@ -1,6 +1,7 @@
 //
 import Foundation
 import CoreData
+import SimplyLogger
 
 struct ScheduledVaccine {
     var batch: String
@@ -26,7 +27,11 @@ struct ScheduledVaccine {
             scheduled.setValue(sign, forKey: "sign")
             scheduled.setValue(sticker, forKey: "sticker")
             scheduled.setValue(vaccine, forKey: "vaccine")
-            DataManager.shared.saveContext()
+            DataManager.shared.saveContext(completion: { (success) -> Void in
+                if success {
+                    SimplyLogger.log(str: "ScheduledVaccine saved", category: .data)
+                }
+            })
         }
     }
     
