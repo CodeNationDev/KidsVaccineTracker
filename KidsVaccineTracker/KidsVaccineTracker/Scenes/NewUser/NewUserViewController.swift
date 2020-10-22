@@ -43,7 +43,7 @@ class NewUserViewController: KVTBaseViewController, UINavigationControllerDelega
                             self.dismiss(animated: true, completion: nil)
                         })
                         
-                        let alertController = KVTAlert(title: "Aviso", message: "Es necesario insertar un nombre, por favor, vuelve a intentarlo.Es necesario insertar un nombre, por favor, vuelve a intentarlo.", actions: (action1, nil))
+                        let alertController = KVTAlert(title: "Aviso", message: "Es necesario insertar un nombre, por favor, vuelve a intentarlo.", actions: (action1, nil))
                         
                         self.present(alertController, animated: true)
                     }

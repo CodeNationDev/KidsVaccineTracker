@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1j-EY-eHM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1j-EY-eHM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,28 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KidsVaccineTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-PT-fmy">
-                                <rect key="frame" x="75.5" y="428.5" width="263" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGp-wr-9YX" customClass="KVTGradientView" customModule="KVTUIKit">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KidsVaccineTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sk7-zl-S0n">
+                                        <rect key="frame" x="87.5" y="430.5" width="239" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Sk7-zl-S0n" firstAttribute="centerX" secondItem="XGp-wr-9YX" secondAttribute="centerX" id="htc-Hz-yFY"/>
+                                    <constraint firstItem="Sk7-zl-S0n" firstAttribute="centerY" secondItem="XGp-wr-9YX" secondAttribute="centerY" id="zOu-sm-iQV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" name="Magenta1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" name="Magenta2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="gNL-PT-fmy" firstAttribute="centerX" secondItem="fgo-ib-3q0" secondAttribute="centerX" id="NOW-Dt-s48"/>
-                            <constraint firstItem="gNL-PT-fmy" firstAttribute="centerY" secondItem="fgo-ib-3q0" secondAttribute="centerY" id="x9c-UF-7a6"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vt3-nj-Duq"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="XGp-wr-9YX" firstAttribute="leading" secondItem="vt3-nj-Duq" secondAttribute="leading" id="Ksk-Zn-9y4"/>
+                            <constraint firstAttribute="bottom" secondItem="XGp-wr-9YX" secondAttribute="bottom" id="P1D-sp-8UP"/>
+                            <constraint firstItem="XGp-wr-9YX" firstAttribute="trailing" secondItem="vt3-nj-Duq" secondAttribute="trailing" id="jCj-B8-v3g"/>
+                            <constraint firstItem="XGp-wr-9YX" firstAttribute="top" secondItem="fgo-ib-3q0" secondAttribute="top" id="ugk-xA-qQf"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="gradientView2" destination="XGp-wr-9YX" id="Lhl-Uz-7Ul"/>
                         <segue destination="xs1-8Q-cqQ" kind="custom" identifier="initial" customClass="ReplaceSegue" customModule="KidsVaccineTracker" customModuleProvider="target" id="5Ot-cJ-Ue1"/>
                         <segue destination="Cap-V3-Vzs" kind="custom" identifier="newuser" customClass="ReplaceSegue" customModule="KidsVaccineTracker" customModuleProvider="target" id="zNP-T7-9rP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2t7-s5-1RT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="254" y="27"/>
+            <point key="canvasLocation" x="253.62318840579712" y="26.785714285714285"/>
         </scene>
         <!--Initial-->
         <scene sceneID="kus-Hs-HIg">
@@ -57,4 +81,18 @@
             <point key="canvasLocation" x="909" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Magenta1">
+            <color red="0.92500001192092896" green="0.29800000786781311" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Magenta2">
+            <color red="0.76899999380111694" green="0.13300000131130219" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

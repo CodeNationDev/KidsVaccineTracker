@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="284" width="414" height="612"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-ei-DPd">
-                                        <rect key="frame" x="60" y="174" width="294" height="90"/>
+                                        <rect key="frame" x="60" y="174" width="294" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-TA-Fme" customClass="KVTLabel" customModule="KVTUIKit">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
@@ -34,9 +34,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-uQ-Bxv" customClass="KVTMasterTextField" customModule="KVTUIKit">
-                                                <rect key="frame" x="0.0" y="35" width="294" height="55"/>
+                                                <rect key="frame" x="0.0" y="35" width="294" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="aZY-0d-sO2"/>
+                                                    <constraint firstAttribute="height" constant="40" id="aZY-0d-sO2"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -126,6 +126,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1h-TQ-hmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="189.85507246376812" y="79.6875"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="rhQ-3r-qnT">
+            <objects>
+                <viewControllerPlaceholder id="paa-By-7he" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAS-4u-eLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="28"/>
         </scene>
     </scenes>
     <resources>

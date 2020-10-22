@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        theme = Theme.defaultThemes.lime.theme
+        theme = Theme.defaultThemes.grapes.theme
         return true
     }
 

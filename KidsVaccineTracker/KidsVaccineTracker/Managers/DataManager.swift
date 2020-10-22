@@ -14,15 +14,10 @@ class DataManager: NSObject {
     override init() {
         self.appDelegate = UIApplication.shared.delegate as? AppDelegate
         SingletonData.context = self.appDelegate!.persistentContainer.viewContext
-//        SingletonData.scheduledVaccines = loadScheduledVaccines()
     }
     
-    public func loadnitialData() -> [CD_Kid]? {
-        if let context = SingletonData.context {
-            let kids = fetchRecordsForEntity("CD_Kid", inManagedObjectContext: context)
-            return kids as? [CD_Kid]
-        }
-        return nil
+    public func loadnitialData() -> [Kid]? {
+        Kid.fetch() 
     }
     
     public func saveContext(completion: (_ success:Bool) -> Void) {

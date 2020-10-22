@@ -67,10 +67,10 @@ struct Kid {
         }
     }
     
-    public static func fetch() -> [Kid] {
+    public static func fetch() -> [Kid]? {
         var fetchedValues:[Kid] = []
         if let context = SingletonData.context {
-            if let kids = DataManager.shared.fetchRecordsForEntity("CD_Kid", inManagedObjectContext: context) as? [CD_Kid] {
+            if let kids = DataManager.shared.fetchRecordsForEntity(CD_Kid.description(), inManagedObjectContext: context) as? [CD_Kid] {
                 kids.forEach {
                     var avatar: UIImage?
                     if let name = $0.name, let id_kid = $0.id_kid {
@@ -81,8 +81,9 @@ struct Kid {
                         fetchedValues.append(kid)
                     }
                 }
+                return fetchedValues
             }
         }
-        return fetchedValues
+        return nil
     }
 }
